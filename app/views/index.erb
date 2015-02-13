@@ -1,10 +1,10 @@
 
-<div id="header">
+<div class="wrapper">
 Happy Valentines babe! If you are down, come back and see a different reason why you are awesome!
 </div>
 
 
-<div id="center">
+<div class="wrapper">
 <p><%= @rand_valentines.compliment %> -<%= @rand_valentines.name %></p>
 <p><img src=<%= @rand_valentines.image %> height=400 width=auto></p>
 
@@ -18,7 +18,7 @@ Happy Valentines babe! If you are down, come back and see a different reason why
 <input type="text" name="valentine[image]" placeholder="URL of live image" style="width: 600px" required/>
 <br>
 <br>
-<label for="name">Your name:</label><br>
+<label for="name">Your name:</label>
 <input type="text" name="valentine[name]" placeholder="Your Name" required/>
 <br>
 <br>
@@ -26,6 +26,3 @@ Happy Valentines babe! If you are down, come back and see a different reason why
 
 </div>
 
-<div id="footer">
-Copyright Lyman Wong
-</div>

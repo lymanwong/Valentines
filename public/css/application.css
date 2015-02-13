@@ -7,22 +7,15 @@
 
 
 body {
-  background-color: #FFE0FF;
+  background-color: #FFCCFF;
 }
 
-#center {
-  width:350px;
-
-  padding-left: 310px;
-}
-
-#footer {
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  height:30px;
-  width:100%;
-  background:red;
+.wrapper {
+  max-width: 800px;
+  margin: 35px auto 0 auto;
+  border: 1px solid #999999;
+  padding: 60px;
+  background: #FFEBF5;
   text-align: center;
-  /*padding-bottom: -5px;*/
+  border-radius: 25px;
 }
