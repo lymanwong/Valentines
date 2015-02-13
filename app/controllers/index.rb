@@ -6,6 +6,6 @@ end
 
 
 post '/' do
-  Valentine.create(name: params[:name], compliment: params[:compliment], image: params[:image])
+  Valentine.create(params[:valentine])
   redirect '/'
 end
