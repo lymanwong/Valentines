@@ -1,0 +1,33 @@
+
+<div id="header">
+Happy Valentines babe! If you are down, come back and see why you are awesome!
+</div>
+
+
+<div id="center">
+<p><%= @rand_valentines.compliment %></p>
+<p><img src=<%= @rand_valentines.image %> height=400 width=auto></p>
+<p><%= @rand_valentines.name %></p>
+
+
+<h3>Add another reason!</h3>
+<form action='/' method=post>
+<label for="compliment">Compliment:</label>
+<input type="text" name="compliment" placeholder="Why do you think Marssy is awesome?" style="width: 600px" />
+<br>
+<br>
+<label for="image">Image link:</label>
+<input type="text" name="image" placeholder="URL of live image" style="width: 600px" />
+<br>
+<br>
+<label for="name">Your name:</label><br>
+<input type="text" name="name" placeholder="Your Name"/>
+<br>
+<br>
+<input type="submit" value="Add a compliment">
+
+</div>
+
+<div id="footer">
+Copyright Lyman Wong
+</div>

@@ -1,0 +1,5 @@
+Valentine.create(name: "Lyman", compliment: "Your smile lights up my day!", image:"https://scontent-lga.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10374471_10153280804463696_7110685787501394256_n.jpg?oh=ab5ae8870713518f00207186fbac6450&oe=555F4DC9")
+Valentine.create(name: "Lyman", compliment: "You are warm and loving person!", image: "https://scontent-lga.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10671314_10153280788133696_4868487072657779739_n.jpg?oh=3a4064116c0d98e6cc518f54a14b6b82&oe=5590CC5C")
+Valentine.create(name: "Lyman", compliment: "You are warm and loving person!", image:"https://scontent-lga.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10671314_10153280788133696_4868487072657779739_n.jpg?oh=3a4064116c0d98e6cc518f54a14b6b82&oe=5590CC5C")
+Valentine.create(name: "Lyman", compliment: "You have a great sense of humor!", image:"https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/10255790_10202225708139275_436737131098725655_o.jpg")
+Valentine.create(name: "Lyman", compliment:"You make our dreams come true!", image:"https://scontent-lga.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/734020_10151748061573696_1196400590_n.jpg?oh=805f40e179f85e9af6ee265287f65f04&oe=556043B7")
