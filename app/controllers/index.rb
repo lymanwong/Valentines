@@ -9,3 +9,7 @@ post '/' do
   Valentine.create(params[:valentine])
   redirect '/'
 end
+
+after do
+  ActiveRecord::Base.connection.close
+end
