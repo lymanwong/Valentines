@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" id="header">
 Happy Valentines babe! If you are feeling down, come back to this site and see a different reason why you are awesome!
 </div>
 
@@ -10,7 +10,7 @@ Happy Valentines babe! If you are feeling down, come back to this site and see a
     <p><img src=<%= @rand_valentines.image %> height=400px width=auto></p>
   </div>
   <h3>Add another reason!</h3>
-  <form action="/" method="post">
+  <form id="myform" action="/" method="post">
   <label for="compliment">Compliment:</label>
   <input type="text" name="valentine[compliment]" placeholder="Why do you think Marssy is awesome?/¿Por qué crees Marssy es impresionante?" style="width: 600px" required/>
   <br>
@@ -23,6 +23,6 @@ Happy Valentines babe! If you are feeling down, come back to this site and see a
   <input type="text" name="valentine[name]" placeholder="Your Name/Su nombre" required/>
   <br>
   <br>
-  <input type="submit" value="Add a compliment">
+  <input class="submit_button" type="submit" value="Add a compliment">
 </div>
 
