@@ -37,3 +37,8 @@ img {
   border-radius: 25px;
   background-color: white;
 }
+
+.hovering {
+  background-color: #9b59b6;
+  color: white;
+}
