@@ -1,5 +1,8 @@
 body {
-  background-color: #FFCCFF;
+  background-image: url("http://www.designbolts.com/wp-content/uploads/2014/03/Light-Blue-blur-background1.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 
 #header {
@@ -8,9 +11,9 @@ body {
 
 .wrapper {
   max-width: 800px;
-  margin: 25px auto 0 auto;
+  margin: 20px auto 0 auto;
   border: 1px solid #999999;
-  padding: 50px;
+  padding: 25px;
   background: #FFEBF5;
   text-align: center;
   border-radius: 25px;
@@ -28,4 +31,9 @@ img {
 
 .compliment {
   font-size: 22px;
+}
+
+.next_button, .submit_button {
+  border-radius: 25px;
+  background-color: white;
 }

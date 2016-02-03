@@ -1,5 +1,5 @@
 <div class="wrapper" id="header">
-Happy Valentines babe! If you are feeling down, come back to this site and see a different reason why you are awesome!
+  Happy Valentines babe! If you are feeling down, come back to this site and see a different reason why you are awesome!
 </div>
 
 
@@ -7,9 +7,11 @@ Happy Valentines babe! If you are feeling down, come back to this site and see a
   <div id="fader">
     <p class="compliment"><%= @rand_valentines.compliment %></p>
     <p class="name">-<%= @rand_valentines.name %></p>
+    <input class="next_button" type="button" value="See another compliment">
     <p><img src=<%= @rand_valentines.image %> height=400px width=auto></p>
   </div>
-  <input class="next_button" type="button" value="See another compliment">
+</div>
+<div class="wrapper">
   <h3>Add another reason!</h3>
   <form id="myform" action="/" method="post">
   <label for="compliment">Compliment:</label>
