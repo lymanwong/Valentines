@@ -8,7 +8,7 @@ $(document).ready(function() {
   $('.next_button').click(function(){
     location.reload();
   });
-  $('.next_button').mouseover(function(){
+  $('.add_button').mouseover(function(){
     $(this).addClass('hovering');
   }).mouseleave(function(){
     $(this).removeClass('hovering');
@@ -20,7 +20,3 @@ $(document).ready(function() {
   });
 
 });
-
-setTimeout(function(){
-   window.location.reload(1);
-}, 7000);

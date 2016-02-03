@@ -9,7 +9,7 @@ body {
   font-size: 18px;
 }
 
-.wrapper, .wrapper_bottom {
+.wrapper_top, .wrapper_middle, .wrapper_bottom {
   max-width: 800px;
   margin: 20px auto 0 auto;
   border: 1px solid #999999;
@@ -32,7 +32,7 @@ img {
   font-size: 22px;
 }
 
-.add_button, .submit_button {
+.add_button, .submit_button, input {
   border-radius: 25px;
   background-color: white;
 }

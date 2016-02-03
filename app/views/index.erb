@@ -1,9 +1,9 @@
-<div class="wrapper" id="header">
+<div class="wrapper_top" id="header">
   Happy Valentines babe! If you are feeling down, come back to this site and see a different reason why you are awesome!
 </div>
 
 
-<div class="wrapper">
+<div class="wrapper_middle">
   <div id="fader">
     <p class="compliment"><%= @rand_valentines.compliment %></p>
     <p class="name">-<%= @rand_valentines.name %></p>
@@ -17,15 +17,15 @@
   <h3>Add another reason now</h3>
   <form id="myform" action="/" method="post">
   <label for="compliment">Compliment:</label>
-  <input type="text" name="valentine[compliment]" placeholder="Why do you think Marssy is awesome?/¿Por qué crees Marssy es impresionante?" style="width: 600px" required/>
+  <input type="text" name="valentine[compliment]" placeholder=" Why do you think Marssy is awesome?/¿Por qué crees Marssy es impresionante?" style="width: 600px" required/>
   <br>
   <br>
   <label for="image">Image link:</label>
-  <input type="text" name="valentine[image]" placeholder="Image URL/URL de la imagen" style="width: 600px" required/>
+  <input type="text" name="valentine[image]" placeholder=" Image URL/URL de la imagen" style="width: 600px" required/>
   <br>
   <br>
   <label for="name">Your name:</label>
-  <input type="text" name="valentine[name]" placeholder="Your Name/Su nombre" required/>
+  <input type="text" name="valentine[name]" placeholder=" Your Name/Su nombre  " required/>
   <br>
   <br>
   <input class="submit_button" type="submit" value="Send some love!">
