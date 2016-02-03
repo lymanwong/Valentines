@@ -7,13 +7,13 @@
   <div id="fader">
     <p class="compliment"><%= @rand_valentines.compliment %></p>
     <p class="name">-<%= @rand_valentines.name %></p>
-    <input class="next_button" type="button" value="See another compliment">
     <p><img src=<%= @rand_valentines.image %> height=400px width=auto></p>
   </div>
+    <input class="add_button" type="button" value="Add a compliment">
 </div>
 
 
-<div class="wrapper">
+<div class="wrapper_bottom">
   <h3>Add another reason now</h3>
   <form id="myform" action="/" method="post">
   <label for="compliment">Compliment:</label>
@@ -28,6 +28,6 @@
   <input type="text" name="valentine[name]" placeholder="Your Name/Su nombre" required/>
   <br>
   <br>
-  <input class="submit_button" type="submit" value="Add a compliment">
+  <input class="submit_button" type="submit" value="Send some love!">
 </div>
 

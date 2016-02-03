@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  $('.wrapper_bottom').hide();
+  $('.add_button').prop('title','Click me to send Marss some love <3');
+  $('.add_button').click(function(){
+    $('.wrapper_bottom').fadeToggle("slow");
+  });
   $('#fader').fadeIn(1000);
   $('.next_button').click(function(){
     location.reload();
@@ -18,4 +23,4 @@ $(document).ready(function() {
 
 setTimeout(function(){
    window.location.reload(1);
-}, 5000);
+}, 7000);

@@ -9,7 +9,7 @@ body {
   font-size: 18px;
 }
 
-.wrapper {
+.wrapper, .wrapper_bottom {
   max-width: 800px;
   margin: 20px auto 0 auto;
   border: 1px solid #999999;
@@ -18,7 +18,6 @@ body {
   text-align: center;
   border-radius: 25px;
   color: #9b59b6;
-
 }
 
 #fader {
@@ -33,7 +32,7 @@ img {
   font-size: 22px;
 }
 
-.next_button, .submit_button {
+.add_button, .submit_button {
   border-radius: 25px;
   background-color: white;
 }
