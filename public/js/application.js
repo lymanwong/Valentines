@@ -32,10 +32,6 @@ $(document).ready(function() {
       dataType: 'json',
       data: data
     })
-
-    .done(function(response){
-      //do something with response
-    })
-      window.alert("Thanks for sharing your love via AJAX!");
+    window.alert("Thanks for sharing your love via AJAX!");
   });
 });

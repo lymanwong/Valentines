@@ -1,8 +1,9 @@
 body {
-  background-image: url("http://www.designbolts.com/wp-content/uploads/2014/03/Light-Blue-blur-background1.jpg");
-  background-repeat: no-repeat;
+  // background-image: url("http://www.designbolts.com/wp-content/uploads/2014/03/Light-Blue-blur-background1.jpg");
+  // background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
+  background-color: #34495e;
 }
 
 #header {
