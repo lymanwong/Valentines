@@ -5,9 +5,22 @@ get '/' do
 end
 
 
+# post '/' do
+#   Valentine.create(params[:valentine])
+#   redirect '/'
+# end
+
 post '/' do
-  Valentine.create(params[:valentine])
-  redirect '/'
+  if request.xhr?
+    p "XHR request received!"
+    Valentine.create(
+      compliment: params["valentine"]["compliment"],
+      name: params["valentine"]["name"],
+      image: params["valentine"]["image"]
+      )
+  else
+    return "Error - XHR request not recieved!"
+  end
 end
 
 after do

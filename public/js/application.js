@@ -18,5 +18,24 @@ $(document).ready(function() {
   }).mouseleave(function(){
     $(this).removeClass('hovering');
   });
+    //Capture the browser event
+  $('#myform').submit(function(event){
+    //Prevent the default action
+    event.preventDefault();
+    //Capture the link path or destiation on server
+    var data = $(this).serializeArray();
+    var path = $(this).parent().attr("action");
+    //Make the AJAX request including path, type, dataType, and data
+    $.ajax({
+      url: path,
+      type: 'POST',
+      dataType: 'json',
+      data: data
+    })
 
+    .done(function(response){
+      //do something with response
+    })
+      window.alert("Thanks for sharing your love via AJAX!");
+  });
 });

@@ -4,12 +4,13 @@
 
 
 <div class="wrapper_middle">
-  <div id="fader">
+  <div class="content" id="fader">
     <p class="compliment"><%= @rand_valentines.compliment %></p>
     <p class="name">-<%= @rand_valentines.name %></p>
     <p><img src=<%= @rand_valentines.image %> height=400px width=auto></p>
   </div>
     <input class="add_button" type="button" value="Add a compliment">
+    <input class="refresh_content" type="button" value="See another compliment">
 </div>
 
 
@@ -28,6 +29,6 @@
   <input type="text" name="valentine[name]" placeholder=" Your Name/Su nombre  " required/>
   <br>
   <br>
-  <input class="submit_button" type="submit" value="Send some love!">
+  <input class="submit_button" type="submit" value="Send some love with AJAX!">
 </div>
 
