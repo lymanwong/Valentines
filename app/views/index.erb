@@ -1,34 +1,50 @@
-<div class="wrapper_top" id="header">
-  Happy Valentines babe! If you are feeling down, come back to this site and see a different reason why you are awesome!
-</div>
-
-
-<div class="wrapper_middle">
-  <div class="content" id="fader">
-    <p class="compliment"><%= @rand_valentines.compliment %></p>
-    <p class="name">-<%= @rand_valentines.name %></p>
-    <p><img src=<%= @rand_valentines.image %> height=400px width=auto></p>
+<div>
+  <video autoplay loop muted poster="http://www.lymanwong.com/images/Tulips_are_Here.jpg" id="background">
+    <source src="http://www.lymanwong.com/images/Tulips_are_Here.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h1>Happy Valentines, babe!</h1>
+          <p>If you are feeling down, come back to this site and see a different reason why you are awesome!</p>
+        </div>
+      </div>
+    </div>
   </div>
-    <input class="add_button" type="button" value="Add a compliment">
-<!--     <input class="refresh_content" type="button" value="See another compliment"> -->
 </div>
 
-
-<div class="wrapper_bottom">
-  <h3>Add another reason now</h3>
-  <form id="myform" action="/" method="post">
-  <label for="compliment">Compliment:</label>
-  <input type="text" name="valentine[compliment]" placeholder=" Why do you think Marssy is awesome?/¿Por qué crees Marssy es impresionante?" style="width: 600px" required/>
-  <br>
-  <br>
-  <label for="image">Image link:</label>
-  <input type="text" name="valentine[image]" placeholder=" Image URL/URL de la imagen" style="width: 600px" required/>
-  <br>
-  <br>
-  <label for="name">Your name:</label>
-  <input type="text" name="valentine[name]" placeholder=" Your Name/Su nombre  " required/>
-  <br>
-  <br>
-  <input class="submit_button" type="submit" value="Send some love with AJAX!">
+<div class="container">
+  <div class="jumbotron">
+    <div class="wrapper_middle">
+      <div class="content" id="fader">
+        <p class="compliment"><%= @rand_valentines.compliment %></p>
+        <p class="name">-<%= @rand_valentines.name %></p>
+        <p><img src=<%= @rand_valentines.image %> height=400px width=auto></p>
+      </div>
+        <button class="btn btn-default add_button" type="submit">Add a compliment</button>
+    </div>
+  </div>
 </div>
 
+<div class="container" id="form">
+  <div class="jumbotron">
+    <div class="wrapper_bottom">
+      <h3>Add another reason now</h3>
+      <form id="myform" action="/" method="post">
+      <label for="compliment">Compliment:</label>
+      <input type="text" name="valentine[compliment]" placeholder=" Why do you think Marssy is awesome?/¿Por qué crees Marssy es impresionante?" style="width: 600px" required/>
+      <br>
+      <br>
+      <label for="image">Image link:</label>
+      <input type="text" name="valentine[image]" placeholder=" Image URL/URL de la imagen" style="width: 600px" required/>
+      <br>
+      <br>
+      <label for="name">Your name:</label>
+      <input type="text" name="valentine[name]" placeholder=" Your Name/Su nombre  " required/>
+      <br>
+      <br>
+      <input class="submit_button" type="submit" value="Send some love with AJAX!">
+    </div>
+  </div>
+</div>

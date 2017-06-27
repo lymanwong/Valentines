@@ -1,6 +1,4 @@
 body {
-  // background-image: url("http://www.designbolts.com/wp-content/uploads/2014/03/Light-Blue-blur-background1.jpg");
-  // background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
   background-color: #34495e;
@@ -13,12 +11,9 @@ body {
 .wrapper_top, .wrapper_middle, .wrapper_bottom {
   max-width: 800px;
   margin: 20px auto 0 auto;
-  border: 1px solid #999999;
   padding: 25px;
-  background: #FFEBF5;
   text-align: center;
   border-radius: 25px;
-  color: #9b59b6;
 }
 
 #fader {
@@ -33,12 +28,26 @@ img {
   font-size: 22px;
 }
 
-.add_button, .submit_button, input {
-  border-radius: 25px;
-  background-color: white;
-}
-
 .hovering {
   background-color: #9b59b6;
   color: white;
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(http://www.lymanwong.com/images/Tulips_are_Here.jpg) no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  background: rgba(238,238,238,.7);
 }
