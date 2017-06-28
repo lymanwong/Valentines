@@ -51,3 +51,8 @@ img {
 .jumbotron {
   background: rgba(238,238,238,.7);
 }
+
+.jumbotron > hr {
+  width: 50%;
+  border-top-color: #e74c3c;
+}

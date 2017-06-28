@@ -1,43 +1,29 @@
-<div>
-  <video autoplay loop muted poster="http://www.lymanwong.com/images/Tulips_are_Here.jpg" id="background">
-    <source src="http://www.lymanwong.com/images/Tulips_are_Here.mp4" type="video/mp4">
-  </video>
-  <div class="container">
-    <div class="row" style="padding:20px 0">
-      <div class="col-md-12">
-        <div class="jumbotron">
-          <h1>Happy Valentine's day!</h1>
-          <p>If you are feeling down, come back to this site and see a different reason why you are awesome!</p>
-
-          <div class="wrapper_middle">
-            <div class="content" id="fader">
-              <p class="compliment"><%= @rand_valentines.compliment %></p>
-              <p class="name">-<%= @rand_valentines.name %></p>
-              <p><img src=<%= @rand_valentines.image %> height=400px width=auto></p>
-            </div>
-              <button class="btn btn-default add_button" type="submit">Add a compliment</button>
+<video autoplay loop muted poster="http://www.lymanwong.com/images/Tulips_are_Here.jpg" id="background">
+  <source src="http://www.lymanwong.com/images/Tulips_are_Here.mp4" type="video/mp4">
+</video>
+<div class="container">
+  <div class="row" style="padding:20px 0">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <h1>Happy Valentine's day!</h1>
+        <p>If you are feeling down, come back to this site and see a different reason why you are awesome!</p>
+        <hr/>
+        <div class="wrapper_middle">
+          <div class="content" id="fader">
+            <p class="compliment"><%= @rand_valentines.compliment %></p>
+            <p class="name">-<%= @rand_valentines.name %></p>
+            <p><img src=<%= @rand_valentines.image %> height=auto width=100%></p>
           </div>
-
+            <!-- <button class="btn btn-default add_button" >Add a compliment</button> -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="">Add a compliment</button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- <div class="container">
-  <div class="jumbotron">
-    <div class="wrapper_middle">
-      <div class="content" id="fader">
-        <p class="compliment"><%= @rand_valentines.compliment %></p>
-        <p class="name">-<%= @rand_valentines.name %></p>
-        <p><img src=<%= @rand_valentines.image %> height=400px width=auto></p>
-      </div>
-        <button class="btn btn-default add_button" type="submit">Add a compliment</button>
-    </div>
-  </div>
-</div> -->
-
-<div class="container" id="form">
+<!-- <div class="container" id="form">
   <div class="jumbotron">
     <div class="wrapper_bottom">
       <h3>Add another reason now</h3>
@@ -55,6 +41,36 @@
       <br>
       <br>
       <input class="submit_button" type="submit" value="Send some love with AJAX!">
+    </div>
+  </div>
+</div> -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Add a new compliment</h4>
+      </div>
+      <div class="modal-body">
+        <form id="myform" action="/" method="post">
+          <div class="form-group">
+            <label for="compliment" class="control-label">Compliment:</label>
+            <input type="text" class="form-control" id="recipient-name" name="valentine[compliment]" placeholder="Why do you think Marssy is awesome?/¿Por qué crees Marssy es impresionante?" required />
+          </div>
+          <div class="form-group">
+            <label for="image" class="control-label">Image link:</label>
+            <input type="text" name="valentine[image]" placeholder="Image URL/URL de la imagen" class="form-control"required/>
+          </div>
+          <div class="form-group">
+            <label for="name" class="control-label">Your name:</label>
+            <input type="text" name="valentine[name]" placeholder="Your name/Su nombre" class="form-control" required/>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary submit_button" type="submit">Send some love with AJAX!</button>
+      </div>
     </div>
   </div>
 </div>
