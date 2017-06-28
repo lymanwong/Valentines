@@ -3,18 +3,28 @@
     <source src="http://www.lymanwong.com/images/Tulips_are_Here.mp4" type="video/mp4">
   </video>
   <div class="container">
-    <div class="row">
+    <div class="row" style="padding:20px 0">
       <div class="col-md-12">
         <div class="jumbotron">
-          <h1>Happy Valentines, babe!</h1>
+          <h1>Happy Valentine's day!</h1>
           <p>If you are feeling down, come back to this site and see a different reason why you are awesome!</p>
+
+          <div class="wrapper_middle">
+            <div class="content" id="fader">
+              <p class="compliment"><%= @rand_valentines.compliment %></p>
+              <p class="name">-<%= @rand_valentines.name %></p>
+              <p><img src=<%= @rand_valentines.image %> height=400px width=auto></p>
+            </div>
+              <button class="btn btn-default add_button" type="submit">Add a compliment</button>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container">
+<!-- <div class="container">
   <div class="jumbotron">
     <div class="wrapper_middle">
       <div class="content" id="fader">
@@ -25,7 +35,7 @@
         <button class="btn btn-default add_button" type="submit">Add a compliment</button>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="container" id="form">
   <div class="jumbotron">
