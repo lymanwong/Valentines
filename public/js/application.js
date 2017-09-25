@@ -31,18 +31,12 @@ $(document).ready(function() {
       type: 'POST',
       data: data,
       success: function(result) {
-        window.alert("Thanks for sharing your love via AJAX!");
-        $('.modal').removeClass('in');
-        $('.modal-backdrop').removeClass('in')
-        $('.modal').css('display','none');
-        window.location.reload(true);
+        $("#mysuccessalert").show();
+        $(".submit_button").hide();
       },
       error: function(result){
-        alert("Bummer, something went wrong with your request.");
-        $('.modal').removeClass('in');
-        $('.modal-backdrop').removeClass('in')
-        $('.modal').css('display','none');
-        window.location.reload(true);
+        $("#myfailalert").show();
+        $(".submit_button").hide();
       }
     });
   });
