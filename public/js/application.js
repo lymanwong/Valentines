@@ -19,20 +19,31 @@ $(document).ready(function() {
     $(this).removeClass('hovering');
   });
     //Capture the browser event
-  $('#myform').submit(function(event){
+  $('.submit_button').click(function(event){
     //Prevent the default action
     event.preventDefault();
     //Capture the link path or destiation on server
-    var data = $(this).serializeArray();
-    var path = $(this).parent().attr("action");
+    var data = $('#myform').serialize();
     //Make the AJAX request including path, type, dataType, and data
     $.ajax({
-      url: path,
+      url: '/',
       type: 'POST',
-      dataType: 'json',
-      data: data
-    })
-    window.alert("Thanks for sharing your love via AJAX!");
+      data: data,
+      success: function(result) {
+        window.alert("Thanks for sharing your love via AJAX!");
+        $('.modal').removeClass('in');
+        $('.modal-backdrop').removeClass('in')
+        $('.modal').css('display','none');
+        window.location.reload(true);
+      },
+      error: function(result){
+        alert("Bummer, something went wrong with your request.");
+        $('.modal').removeClass('in');
+        $('.modal-backdrop').removeClass('in')
+        $('.modal').css('display','none');
+        window.location.reload(true);
+      }
+    });
   });
 });
 
