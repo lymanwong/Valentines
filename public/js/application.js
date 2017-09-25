@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(this).scrollTop(0);
   $('#form').hide();
   $('.add_button').prop('title','Click me to send Marss some love <3');
   $('.add_button').click(function(){
